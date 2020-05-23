@@ -121,7 +121,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+LOGIN_REDIRECT_URL = ''
 LOGIN_URL = 'accounts:login'
-
-LOGIN_REDIRECT_URL = 'todolist:index'
-LOGOUT_REDIRECT_URL = 'todolist:index'
+LOGOUT_REDIRECT_URL = 'accounts:index'
