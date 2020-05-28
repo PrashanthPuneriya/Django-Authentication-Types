@@ -5,6 +5,7 @@ class MyUser(AbstractUser):
     email = models.EmailField(verbose_name='email', max_length=255, unique=True)
     
     # The `USERNAME_FIELD` property tells us which field we will use to log in.
+    # In Django USERNAME_FIELD is a unique identifier i.e. nickname of the user but not technically username
     USERNAME_FIELD = 'email'
     EMAIL_FIELD = 'email'
 
