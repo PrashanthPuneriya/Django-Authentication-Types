@@ -1,5 +1,4 @@
 from rest_framework.response import Response
-from rest_framework.authtoken.models import Token
 from rest_framework import (
     views,
     generics,
@@ -8,6 +7,7 @@ from rest_framework import (
 from rest_framework.permissions import AllowAny, IsAuthenticated
 
 from accounts.models import MyUser
+from rest_framework.authtoken.models import Token
 from .serializers import MyUserSerializer
 
 from django.contrib.auth import authenticate
@@ -29,8 +29,8 @@ class RegisterAPI(generics.CreateAPIView):
         user.first_name = first_name
         user.last_name = last_name
         user.save()
-
-        token = Token.objects.create(user=user)
+        #Generating a token for new users
+        token = Token.objects.create(user=user) #Token and MyUser has a OneToOne relation
         return Response({'detail': 'User has been created with token: ' + token.key})
 
 
