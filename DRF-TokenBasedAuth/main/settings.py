@@ -33,11 +33,6 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
 ]
 
-# REST_FRAMEWORK = {
-#     'DEFAULT_PERMISSION_CLASSES': [
-#         'rest_framework.permissions.AllowAny',
-#     ]
-# }
 AUTH_USER_MODEL = 'accounts.MyUser'
 
 REST_FRAMEWORK = {
