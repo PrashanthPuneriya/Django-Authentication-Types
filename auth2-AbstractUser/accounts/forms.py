@@ -7,7 +7,7 @@ class MyUserCreationForm(UserCreationForm):
     first_name = forms.CharField(max_length=50, required=True, label='First Name')
     class Meta:
         model = MyUser
-        fields = ['first_name', 'last_name', 'username', 'email', 'password1', 'password2']
+        fields = ['email', 'first_name', 'last_name', 'username', 'password1', 'password2']
         
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
