@@ -50,5 +50,3 @@ It demonstrates:-
 * Login via email instead of username using AbstractUser
 * Registration View logic
 * RestAPI endpoints
-
-## Disclaimer
