@@ -8,4 +8,5 @@
   - Token generation for the new user
   - Login
   - ChangePassword
-  
+ 
+ The custom implementation of Registration and Login has been implemented vaguely. It needs further improvements.
