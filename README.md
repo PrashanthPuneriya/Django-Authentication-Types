@@ -1,4 +1,4 @@
-# Django-Learning
+# Django-Authentication-Types
 
 ## Django
 
